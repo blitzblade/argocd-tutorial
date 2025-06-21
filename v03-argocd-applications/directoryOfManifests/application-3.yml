@@ -9,6 +9,7 @@ spec:
   project: default
   source:
     directory:
+      recurse: true
       include: '{serviceaccount.yml,service.yml,deployment.yml}'
     path: v03-argocd-applications/directoryOfManifests
     repoURL: https://github.com/blitzblade/argocd-tutorial.git
