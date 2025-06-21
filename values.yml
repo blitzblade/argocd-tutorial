@@ -1,0 +1,15 @@
+server:
+  ingress:
+    enabled: true
+    annotations:
+      nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+      nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    ingressClassName: nginx
+    hosts: 
+      - devops.kwesi
+    paths:
+      - /
+    pathType: Prefix
+    https: true
+
+
